@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'sensor_node_sim/build/esp32.esp32.esp32/sensor_node_sim.ino.merged.bin'
+elf = 'sensor_node_sim/build/esp32.esp32.esp32/sensor_node_sim.ino.elf'

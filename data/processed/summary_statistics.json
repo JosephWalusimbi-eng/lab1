@@ -1,0 +1,13 @@
+{
+  "source_file": "sensor_log_20260929_171534.csv",
+  "rows": 600,
+  "duration_s": 599.0,
+  "invalid_dht_reads": 0,
+  "rows_flagged_invalid": 0,
+  "events": 19,
+  "effective_rate_hz": {
+    "LDR / PIR (main loop)": 1.0017,
+    "DHT11 (fresh valid samples)": 0.5008
+  },
+  "noise_reduction_pct": 69.54328289492864
+}

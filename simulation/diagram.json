@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Lab 1 team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -120, "left": 190, "attrs": { "temperature": "25", "humidity": "60" } },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr", "top": 180, "left": -260, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir", "top": -130, "left": -150, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 230, "left": 200, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 300, "left": 160, "attrs": { "value": "220" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 120, "left": 260, "attrs": { "volume": "0.1" } },
+    { "type": "wokwi-ntc-temperature-sensor", "id": "ntc", "top": 20, "left": 330, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:3V3", "dht:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "dht:GND", "black", [ "v0" ] ],
+    [ "esp:D4", "dht:SDA", "green", [ "v0" ] ],
+
+    [ "esp:3V3", "ldr:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "ldr:GND", "black", [ "v0" ] ],
+    [ "esp:D34", "ldr:AO", "orange", [ "v0" ] ],
+
+    [ "esp:3V3", "pir:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "pir:GND", "black", [ "v0" ] ],
+    [ "esp:D27", "pir:OUT", "blue", [ "v0" ] ],
+
+    [ "esp:D2", "r1:1", "purple", [ "v0" ] ],
+    [ "r1:2", "led1:A", "purple", [ "v0" ] ],
+    [ "led1:C", "esp:GND.2", "black", [ "v0" ] ],
+
+    [ "esp:D25", "bz1:2", "brown", [ "v0" ] ],
+    [ "bz1:1", "esp:GND.2", "black", [ "v0" ] ],
+
+    [ "esp:3V3", "ntc:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "ntc:GND", "black", [ "v0" ] ],
+    [ "esp:D35", "ntc:OUT", "teal", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
