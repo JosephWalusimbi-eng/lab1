@@ -2,3 +2,15 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 .pio/
+# study aid, not a deliverable
+docs/Project_and_Code_Explanation.docx
+python/make_explanation_doc.py
+python/make_report_draft.py
+# build output, logs, Office temp files, stray screenshots
+simulation/sensor_node_sim/build/
+*.log
+~$*
+wokwi fail change to vscode.png
+# lecturer's own guide and misc
+Lab1_Guide_final.pdf
+*wokwi fail*

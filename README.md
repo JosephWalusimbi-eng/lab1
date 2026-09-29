@@ -4,6 +4,8 @@ Low-cost sensing node: DHT11 (temperature/humidity), LDR (light), PIR (motion).
 The ESP32 validates, calibrates and filters the data locally, makes a simple status decision,
 and streams a timestamped CSV over serial for analysis in Python.
 
+Repository: https://github.com/JosephWalusimbi-eng/lab1
+
 ## Repository structure
 ```
 lab1/
